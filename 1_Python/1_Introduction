@@ -1,0 +1,298 @@
+Python-------> 3.x
+3.6
+fundamental part----->
+Introduction ------>
+object----everything in python is object
+1 Primary Data type ----object---primitive data type
+    single value present
+    1 number----->
+        int ------> 0-9
+        float-----> decimal value 1.5
+        complex number------>?????
+        real part+imaginary
+    2 String
+            '' or "" or ''' '''
+    3 Bool
+                True or False
+    4 None  ------> NULL
+2 Secondary data type ------> collection of all the data types
+        list ------> [10,20,30,40]
+        tuple -----> (10,20,30) or 10,20,30
+        set -----> {10,20,30,40}
+         dict -------->{1:100,2:200,3:300}
+
+
+immutable------> no change-----not changable
+            all primary +tuple
+
+mutable-----> list,set,dict
+
+
+iterable data type------> one by one process
+        string   'pune' ---->
+        list
+        tuple
+        set
+        dict
+
+
+PEP8 -----> python ench purpose
+
+33+ keywords
+
+
+comments ----> #
+
+
+
+packing  ----number of values will assign to single variable ----tuple
+unpacking---number of values will assign to number of variables------> single value
+
+DOB-----> feb 20th 1991
+1989 ----> Guido Van rossam
+        The complete monty's python circle
+        simple to undestand
+        large library----->???
+
+        print('hello world')
+
+        open source
+        platform indepenent
+
+        case sensitive ------> ???
+
+        x=10
+
+        X=100
+
+
+
+Comments ----->
+    Non excutable codes
+    logic----> BL----> descript about logic
+    code maintaince easy ----> why
+    non executable code
+
+
+    2019 ----> 10 line ---xyz
+
+    2020----->
+
+single line comment  ------> ctrl + / -----> #
+multi line comment -----> ctrl+shift+/ ---> ''' '''  -----> doct
+
+name_of_person='vaibhav'
+city='pune'
+
+
+Identifiers----->
+A name in program is identifiers
+    variable name, class name,function name, module name (file name ), package name
+
+
+    letter(lower or capital)
+    digits(0-9)
+    underscores(_)
+
+    hellow_world_123
+    123_hello_world
+
+
+    $---no
+    #-----> comment
+
+
+    name='vaibhav'
+
+    _name='vaibhav'  ---private identifier
+
+    __name='vaibhav' ----> strongly private identifier
+
+    __name__='vaibhav'------> magic method / dender
+
+
+
+x=10
+
+del ---> object delete resp
+if object ref count is zero---that object responsible for GC
+
+Operators in python----->??
+
+
+operator---symbol
+
+
+1  Arithmatic operator
++ ----addition ---sum
+        int
+        float
+        com
+        string
+        list
+        tuple
+        set,dict------> error----runtype-----> typeerror
+
+
+    10+10=====> 20
+
+    int+int-------> int
+    10+10=====>20
+
+    10.0+10.0 ------> 20.0
+    float+float---->float
+
+
+    str+str-----> string
+
+    set+set-----> no
+    dict+dict----> No
+
+
+    list,tuple-----> array
+
+
+    set,dict----> hashable
+
+
+
+Ducktyping----->***** object type its method is call
+
+
+
+
+
+
+- ----> substration
+    100-50
+    100.0-51.5
+
+
+
+
+
+
+
+
+* ----> multiplication
+    int*int----int
+
+    repeatation
+        string
+        list
+        tuple
+
+/ -----division
+        10/2  ----> 5.0
+                    always return float
+
+                    int/int----float
+
+
+% ----modulus
+            ----> rem
+
+
+// ----floor division
+            always return int
+
+            int//int ----> int
+
+
+
+** ----> power
+    x**y ----> x to the power y
+
+
+
+
+
+
+
+
+2 Comparision / Relational operator  -----> bool-----> True or False
+<
+>
+<=
+>=
+==
+!=
+
+
+
+
+3 logical operators
+    and ----> if any value is false ----> False
+
+
+    or---> if any value is True -----> True
+
+
+    not ----->
+    not True----> False
+    not False----> True
+
+x and y ----> y
+
+x or y ----> x
+
+
+False-----> false,None,'',0,[],(),{},set()
+
+
+
+4 Idenity operator------> id function-----> memory address
+
+    is ----> True if object have same memory location
+
+    is not
+
+
+
+5 membership operator ----> iterable----> string,list,tuple,set,dict
+    will check elemennt is present in iterable or not
+
+    in
+
+
+    not in
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
