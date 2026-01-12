@@ -1,0 +1,360 @@
+OOP----> object oriented programming
+object------> everything in python is object
+        -----> object is a blue print of class
+class ------> variable and method
+        ----> data member and member functions
+        ----> attributes and actions
+variable-------> 2 type----> instance variable(obj), class varibale(static variable)
+methods-----> 3 types----> instance methods(self),class method(cls), static method
+constructor------> __init__(self) ---> python
+self----------> current object reference
+
+
+4 Piller of OOP/PRICIPAL/CHAR OOP
+1 Innheritance ------> relationship between two or more classes
+    types---->
+    MRO ------> 5+ years candidate---method resolution order-----> actual MRO
+        ----> linear c3 algorithm
+2 POLYMORPHIMS -----> one name in many forms
+    Ducktyping phylosopy
+    Overriding -----> in parent class in child class method same
+    overloading-----> in same class method is same -----> not support ---> 1
+3 enchapulation------> binding of data in single unit ----> capsule
+4 Abtrastraction ------> hinding inform from end user
+        RBI----->
+
+
+class----->model
+        collection of variables and methos
+        class NAMEOFCLASS:
+            variables
+            methods
+            custructor
+
+object------> instance of class
+            physical existance of class
+            multiple
+
+            obj=CLASSNAME()
+
+
+
+custructor ------>
+        __init__(self): ----> initialise the variables
+        once you create object----> constructor will call
+
+
+self-----> anything=------> current object reference
+        java----> this
+
+
+can you prince how many objects are created by user??
+
+
+class A:
+
+
+a1=A()
+a2=A()
+a3=A()
+
+
+if you want display data of object----->
+    def __str__(self)-----to print the data of object
+                    return the string
+
+                    indivisual object cha data print
+
+    def __repr__(self) -----> if your objects are in collection
+                    return string of current
+
+                    return str(self)
+
+
+
+
+
+
+Based on the object we can call methods and variable
+---------------------------------------------------------
+
+Types of variable
+Instance variable ----> object variable---self
+    where to define instance variable
+    1 inside __init__ ----> self.variablename
+    2 inside the instance method ----> self.variablename
+    3 outside the class ----> objectrefernce.variable
+
+    how to access instance variable
+    self.variable
+    object.variable
+
+
+static variable-----> class variable ----> classname or cls
+    where to define static variable
+    inside the constructor ----> classname.variable
+    outside the constructor at class level ---> variable name
+    inside the method ----> classname.variable
+    inside the classmethod ---> classname.variable or cls.variable
+
+    how to access static variable
+
+
+
+Type of method
+Instance method   ---> self
+    will create seprate copy for indivisual objects
+
+
+classmethod ---> cls and @classmethod
+        unique for all the object
+
+static method----> no parameter and @staticmethod
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Inner class ---->
+    you define class inside the class
+
+    class Outer:
+        class Inner:
+            variable
+            method
+
+    1st way
+    o1=Outer()
+    i1=o1.Inner()
+
+    2nd way
+    o1=Outer().Inner()
+
+    3rd
+    Outer().Inner().
+
+
+
+
+
+
+
+
+
+4 pillers of OOP ---->
+
+1 Inheritance  ----->
+    Relationship between two or more classes
+    Relationship between parent(super) and child(subclass)
+
+    all variables,methods,constructor of parent class we can access with child class
+    parent property to extend in child
+
+    code reusability
+
+    childclass(Parentclass)
+
+    every class is a child class of object
+
+
+    Types of Inheritance in python
+    1 Single Inheritance
+            single parent and single child
+            class P:
+            class C(P):
+
+    2 Multilevel Inheritance
+            every parent class have child class
+            A--->B--->C---->D--->E
+
+    3 Multiple Inheritance
+        multiple parent and single child
+
+        A
+        B
+        C(A,B)
+
+
+    4 Hierachical Inheritance
+        single parent and multiple child class
+
+        A
+        B(A)
+        C(A)
+
+
+    5 Hybrid Inheritance
+            combination of all
+            single
+
+
+    6 Cyclic Inheritance ------> recent class call----> dyanamic typed lanaguage
+
+    No supported in python
+
+    A ---> B   B--->A
+
+
+
+
+class Employee:
+
+
+class Employee(object):
+
+
+
+
+
+
+MRO----> method resolution order
+        will tell which method/variable will call first
+
+
+        Head Element and Tail Elements
+
+        ABCDEFG
+
+        1 Take the head as first
+        2 compare the head element to other elements
+
+        if head is not in tail element other,then outside
+        if it equal then go for next elemenents
+
+
+        MRO(P) = P+ [MRO(X),MRO(Y),MRO(C),XYC]
+                = P+[XABO,YBCO,CO,XYC]
+                PX+[ABO,YBCO,CO,YC]
+                PXA+[BO,YBCO,CO,YC]
+                PXAY+[BO,BCO,CO,C]
+                PXAYB+[0,CO,CO,C]
+                PXAYBC+[0,0,0]
+               ------> PXAYBCO
+
+
+super() ------> responsible to call the parent class method
+
+Polymorphism-----> One Name in Many form
+
+        poly----> many          morphs---form
+
+        +
+        *
+1 Duck typing ***
+        Based on the object type its method is call
+
+2 Overloading----> Not why?? ---compile time poly---java,c++ , python No
+    method,variable,constructor is same inside current class
+
+    1 method overloading----> method name is same inside current class
+                    not supported python
+                    recent method will call
+    2 Constructor overloading----> __init__(self) multiple inside current class
+                    not supported python
+                    recent __init__ will call
+    3 operator overloading -----> yes ahe but for that we need write the magic methods
+
+    10+10 ===20
+    'a'+'b'---ab
+
+    write magic methods
+    +  __add__(self,other)
+
+
+
+3 Overriding---> run time poly
+    method,variable,constructor is same inside parent and child class
+
+    1 constructor overriding
+            parent and child class have same __init__
+
+    2 method overriding
+            parent and child class have same method name
+            child method
+
+
+4 Encapulation -----> binding of data in single unit
+        capsule ----> binding of medicine
+
+        class A:
+            var1=10
+            def m1():
+                1 method
+
+
+5 Abstraction ----->
+        Hiding the data from end user
+        Only declaration---implementation in first child class
+
+
+
+        RBI
+            min_balance
+            deposite
+            withdrow
+
+        Maha
+            min_balance=5000
+            deposite
+            withdrow
+
+        HDFC
+            min_balance=1000
+            deposite
+            withdrow
+
+        ICIC
+            min_balance=0
+            deposite
+            withdrow
+
+
+        abc ----> abstract base class module
+        ABC ----> ABSTRACT BASE CLASS
+        abstractmethod
+
+        if anyclass you make as abstract then it should be child of ABC
+        @abstractmethod
+
+        from abc import ABC,abstractmethod
+
+        ** we cant create the object of abstract class
+
+        object ---> child class
+
+
+
+
+
+
+
+
+
+
+
+
+

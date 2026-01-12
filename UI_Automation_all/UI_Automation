@@ -1,0 +1,216 @@
+UI Automation ----->
+
+UI / GUI
+User Interface / Graphical User Interface
+
+
+web application -----> web server ----> www.
+
+AWS
+
+HTTP ----> hyper text trasfer protocol
+
+Automation ??
+
+
+
+laptop----> bluetooth ----> start----> No response
+
+drivers---->is one of mach to start the application
+
+
+web application-----> web driver -----> selenium ---> 3rd party library
+u can install the library ---
+        pip install package/library
+
+        pip install selenium
+
+        pip---python install package
+
+
+
+
+        driver.maximize_window()
+        driver.minimize_window()
+
+        driver.save_screenshot('sample.png')   #screen image
+
+        driver.title # give the title of webpage
+        driver.current_url
+        driver.page_source
+
+
+        Navigation commands
+
+        driver.refresh() # refresh the current page
+        driver.back()  #backword the page
+        driver.forword()
+
+        locators---> Selector hub
+        1 id ---unique
+
+        2 class---multiple---radio,checkbox
+
+        3 name---> unique for the element
+
+        4 xpath---DOM
+            Absulate xpath----> /
+            relative xpath ---> //
+                //tagname[@attribute='val of attribute']
+
+        5 css selector
+            #id
+            .classname
+
+        6 linktext---> href
+
+
+        1 find_element ---> single element
+
+        2 find_elements---> multiple element ---> list
+
+        from selenium.webdriver.by import By
+
+        methods elements--->
+
+        ele.click() ---> click on element
+        ele.clear()
+        ele.submit() ---->enter key
+
+        ele.send_keys('data')
+
+        ele.text --->
+        ele.is_displayed() ---True if element is available
+        ele.is_enabled() ----> Interaction ---input,click
+        ele.is_selected() ---> True
+
+        Pop-up ---alert
+
+        1 confi alert ---> OK or Cancel
+
+        2 info alert ---> OK
+
+        3 input alert ----> input provide---> OK or Cancel
+
+        Ok---> accept
+        cancel---dismiss
+
+
+        browser---> pop-up
+
+
+       waits
+       time.sleep(2) -----> stop the script
+
+
+       1 Implicit wait-----> all elements
+                webdriver wait
+                browser level
+                global wait for all web elemets
+
+            driver.implicitly_wait(5)     #5 sec----> all the elements locate - 5sec
+
+
+
+       2 explicit wait ----> wait to specific element
+
+
+
+
+
+       dropdown
+
+
+
+
+
+
+
+
+       file op---->
+
+
+
+       upload the file
+
+       file_path---->
+           element=driver.find_element(By.XPATH,'XPATH OF ELEMENT')
+           element.send_keys(file_path)
+
+       Download
+
+       1 python Selenium script to download the file(txt,json,png,mp4,mp3,xl,csv)
+
+
+//a[@href='download/test_upload_file.txt']
+
+
+os----> operating system
+
+os.path.exit(filepath) -----> True if file is present else False
+
+C:\Users\Admin\Desktop\PT12\sample.txt ---> present
+
+
+
+--------------------------------------------------------------------
+
+from selenium.webdriver.keys import Keys
+element=driver.find_element(By.TAG_NAME,"body")
+element.send_keys(Keys.DOWN)
+elemement.send_keys(Keys.UP)
+
+---------------------------
+
+actionchain
+
+drag_and_drop(sourse,distination)
+
+move_to_element(ele)
+
+
+right click ---->
+context_click(ele)
+
+double click----->
+double_click(ele) ----> 2time
+click() ----> 1 time
+
+-------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Selenium IMP inteviews---->
+
+
+what is webdriver?
+how to initiate webdriver?
+find element and find elements
+what the locators
+close and quite
+how to nevigation
+how to handle alerts
+how to handle radio buttons,checkbox,dropdow
+select class
+tc for login 
+
+
+
+
+
+
+
+

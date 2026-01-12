@@ -1,0 +1,19 @@
+def area_circle(r):
+    return 3.14*r*r
+def area_square(side):
+    return side*side
+def area_triangle(base,height):
+    return 0.5*base*height
+def area_reactagle(base,height):
+    return base*height
+def add_two(x,y):
+    return x+y
+s=lambda x,y:x-y
+def mul_two(x,y):
+    return x+y
+def div_two(x,y):
+    if y==0:
+        return 'it is not divisible by 0'
+    return x/y
+def power_number(x):
+    return x**2

@@ -1,0 +1,126 @@
+
+pytest -----> 3rd part library
+    pip list ----> list of all the installed packages
+    pip install pytest
+
+
+    suite ----> collection of test case
+    test case -----> validation and verification of BL
+
+    pytest ------>
+    test_*.py file
+    test cases ----> function ----> test_name()
+    class test ----> TestClassname
+
+
+    def add(a,b):
+        return a+b
+
+    assert actual_result == expected_result
+
+
+
+    how to run the test cases in terminal
+
+    pytest filename   ----> all the tc available inside test file===test suite
+
+    -s ----> logs on console
+    -v --->verbose---> test name and result of tc
+    -k ----> keyword based tc running
+
+    grouping of tc ----> markers in pytest
+
+    @pytest.mark.s1
+
+    -m s1
+
+    fixtures -----> setup and teardown (cleanup activities)
+
+    before
+    tc
+    after
+
+    function ----> yield
+
+    @pytest.fixture
+
+
+    agile --- dev and test tc
+    skip
+    @pytest.mark.skip(reason='not implemented')
+
+    ordering of tc
+    @pytest.mark.order(1)
+
+
+    parameterisation
+        if func same but inputs are different
+
+        @pytest.mark.parametrize('x,y,expected',[(1,2,3),(10,20,30),(100,1,101),()])
+
+    parallel execution ---> multi threading
+
+    --maxfail=1    -----> any tc failed then stop the execution
+    pytest.fail()
+    pytest.exit()
+
+
+
+    Reporting in pytest
+    html, allure
+
+    --html='reportname.html'
+
+
+
+
+    Open new tab and new window in selenium
+
+    driver.switch_to.new_window('tab') --->new tab
+    driver.switch_to.new_window('window') ---> new window
+
+
+    Authentication in UI
+
+    browser----> it expected to enter username password ---> UI
+
+    url---> authencated
+
+    http://username:password@url
+
+
+    locators in selenium ---->
+
+    id ----> unique identification on ui
+
+    class
+
+    name
+
+    xpath
+
+    css
+
+    hyper link
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,43 @@
+<----------- Expections ------> error
+            Abnormal conditions during BL
+
+            2 Errors
+
+            1 syntax error-----> invalide sytax ----> engineers
+                        Programming
+                        l1=[1,2,3,4,5)   ----> list
+
+                        is not responsible to handle------> engineer
+
+            2 runtimes error ----> logic
+                        invalide user logic
+                        type error
+                        name error
+                        index error
+                        value errors
+                        key error
+
+            we can handle with expection handling *** daily
+            try block
+
+            it is responsible to execute all the line of code
+
+
+            try:
+                risky code
+            expect Expection :
+                ------
+            finally:
+                    executed
+
+
+                    try:
+                        try:
+
+                        expect:
+
+
+                    expect :
+                        code/ expection handle
+                    finally:
+                        end
